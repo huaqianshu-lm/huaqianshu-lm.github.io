@@ -4,32 +4,32 @@ export const zhNavbar = navbar([
   "/",
   {
     text: 'Solidity ',
-    icon: '',
+    icon: 'fa-brands fa-ethereum',
     link: '/solidity/'
   },
   {
     text: 'HTML',
-    icon: '',
+    icon: 'fab fa-html5',
     link: '/html/'
   },
   {
     text: 'CSS',
-    icon: '',
+    icon: 'fab fa-css3-alt',
     link: '/css/'
   },
   {
     text: 'JavaScript',
-    icon: '',
-    link: '/js/'
+    icon: 'fa-brands fa-square-js',
+    link: '/javascript/'
   },
   {
     text: '项目',
-    icon: '',
+    icon: 'fa-solid fa-sheet-plastic',
     link: '/project/'
   },
   {
     text: '时间轴',
-    icon: '',
+    icon: 'fa-solid fa-timeline',
     link: '/timeline/'
   },
 ]);

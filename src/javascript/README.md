@@ -1,9 +1,8 @@
 ---
-title: solidity 教程
+title: 即将开始
 date: 2024-09-01
 categories: 
-  - solidity
+  - JavaScript
 author: 花千树
 ---
-
 

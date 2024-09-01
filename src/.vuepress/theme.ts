@@ -90,6 +90,14 @@ export default hopeTheme({
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
 
+    comment: {
+      // You should generate and use your own comment service
+      provider: "Giscus",
+      repo: "huaqianshu-lm/huaqianshu-lm.github.io",
+      repoId: "R_kgDOMrOvhA", // 替换下
+      category: "Announcements",
+      categoryId: "DIC_kwDOMrOvhM4CiIBg" // 替换下
+    },
 
     
 
