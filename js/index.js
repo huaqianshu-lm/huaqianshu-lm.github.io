@@ -8,8 +8,8 @@ async function fetchHitokoto() {
 }
 
 fetchHitokoto();
-setTimeout(() => {
-  fetchHitokoto();
-}, 1 * 1000 * 60 * 30);
+// setTimeout(() => {
+//   fetchHitokoto();
+// }, 1 * 1000  );
 
 
