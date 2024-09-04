@@ -179,6 +179,17 @@ export default hopeTheme({
       // sandpack: true,
     },
 
+    searchPro:{
+      indexContent: true,
+      indexLocaleOptions: {
+        "/zh/": {
+          // 使用 nodejs-jieba 进行分词
+          tokenize: (text, fieldName) =>
+            fieldName === "id" ? [text] : cut(text, true),
+        },
+      },
+    },
+
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",

@@ -2,12 +2,13 @@ import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { cut } from "nodejs-jieba";
 import theme from "./theme.js";
+import { blogPlugin } from '@vuepress/plugin-blog'
 
 export default defineUserConfig({
   base: "/",
   head: [
     ["link", { rel: "icon", href: "favicon.ico" }],
-    ["script",{type:"",src:"/js/index.js"}]
+    // ["script",{type:"",src:"/js/index.js"}]
   ],
   locales: {
     "/": {
@@ -27,16 +28,18 @@ export default defineUserConfig({
 
 
   plugins: [
-    searchProPlugin({
-      indexContent: true,
-      indexLocaleOptions: {
-        "/zh/": {
-          // 使用 nodejs-jieba 进行分词
-          tokenize: (text, fieldName) =>
-            fieldName === "id" ? [text] : cut(text, true),
-        },
-      },
-    }),
+    // searchProPlugin({
+    //   indexContent: true,
+    //   indexLocaleOptions: {
+    //     "/zh/": {
+    //       // 使用 nodejs-jieba 进行分词
+    //       tokenize: (text, fieldName) =>
+    //         fieldName === "id" ? [text] : cut(text, true),
+    //     },
+    //   },
+    // }),
+
+
   ],
 
   // Enable it with pwa
