@@ -23,19 +23,22 @@ footer: 你真的读到这里了？那你一定超爱这个博客！
   async function fetchHitokoto() {
     const response = await fetch('https://v1.hitokoto.cn')
     const { uuid, hitokoto: hitokotoText, from, from_who } = await response.json()
-    const hitokoto = document.querySelector('.vp-blog-hero-description')
-    // hitokoto.href = `https://hitokoto.cn/?uuid=${uuid}`
-    // hitokoto.innerText = hitokotoText + (from_who ? '——' + from_who : '');
+    if (typeof document!== 'undefined') {
+    
+        const hitokoto = document.querySelector('.vp-blog-hero-description')
+        // hitokoto.href = `https://hitokoto.cn/?uuid=${uuid}`
+        // hitokoto.innerText = hitokotoText + (from_who ? '——' + from_who : '');
 
-    let text = hitokotoText + (from_who ? '——' + from_who : '');
+        let text = hitokotoText + (from_who ? '——' + from_who : '');
 
-    const typed = new Typed('.vp-blog-hero-description', {
-      strings: [text],
-      typeSpeed: 50,
-      showCursor: true,
-      cursorChar: '|',
-      autoInsertCss: true,
-    });
+        const typed = new Typed('.vp-blog-hero-description', {
+          strings: [text],
+          typeSpeed: 50,
+          showCursor: true,
+          cursorChar: '|',
+          autoInsertCss: true,
+        });
+     }
   }
 
   fetchHitokoto();
@@ -71,4 +74,4 @@ footer: 你真的读到这里了？那你一定超爱这个博客！
 .vp-blog-hero-description{
   display: inline-block;
 }
-</style> 
+</style>
