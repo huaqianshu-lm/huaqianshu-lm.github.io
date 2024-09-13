@@ -5,7 +5,14 @@ export const zhNavbar = navbar([
   {
     text: 'Solidity ',
     icon: 'fa-brands fa-ethereum',
-    link: '/solidity/'
+    prefix: '/',
+    children: [
+      {
+        text: 'Solidity 基础教程',
+        // icon: 'fa-brands fa-ethereum',
+        link: 'solidity基础/',
+      }
+    ]
   },
   {
     text: 'HTML',

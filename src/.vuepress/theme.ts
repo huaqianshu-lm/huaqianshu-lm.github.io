@@ -76,12 +76,15 @@ export default hopeTheme({
     },
   },
 
+
   // enable it to preview all changes in time
   hotReload: true,
-
+ 
   plugins: {
     blog: true,
-
+    readingTime:{
+      wordPerMinute: 150,
+    },
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
@@ -96,10 +99,11 @@ export default hopeTheme({
       repo: "huaqianshu-lm/huaqianshu-lm.github.io",
       repoId: "R_kgDOMrOvhA", // 替换下
       category: "Announcements",
-      categoryId: "DIC_kwDOMrOvhM4CiIBg" // 替换下
+      categoryId: "DIC_kwDOMrOvhM4CiIBg", // 替换下
+      
     },
 
-    
+   
 
 
 
