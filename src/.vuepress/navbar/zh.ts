@@ -11,6 +11,11 @@ export const zhNavbar = navbar([
         text: 'Solidity 基础教程',
         // icon: 'fa-brands fa-ethereum',
         link: 'solidity基础/',
+      },
+      {
+        text: 'Solidity 番外',
+        // icon: 'fa-brands fa-ethereum',
+        link: 'Solidity番外/',
       }
     ]
   },

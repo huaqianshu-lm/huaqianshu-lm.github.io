@@ -25,6 +25,7 @@ export const zhSidebar = sidebar({
   // ],
 
   "/solidity基础/": "structure",
+  "/Solidity番外/": "structure",
   "/html/":  "structure",
   "/css/":  "structure",
   "/javascript/":  "structure",
