@@ -40,6 +40,11 @@ export const zhNavbar = navbar([
     link: '/project/'
   },
   {
+    text: '时光碎片',
+    icon: 'fa-solid fa-feather',
+    link: '/essay/'
+  },
+  {
     text: '时间轴',
     icon: 'fa-solid fa-timeline',
     link: '/timeline/'

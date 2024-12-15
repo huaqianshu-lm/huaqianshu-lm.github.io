@@ -30,5 +30,6 @@ export const zhSidebar = sidebar({
   "/css/":  "structure",
   "/javascript/":  "structure",
   "/project/":  "structure",
+  "/essay/":  "structure",
 });
 
