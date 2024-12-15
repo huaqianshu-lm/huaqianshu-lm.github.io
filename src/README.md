@@ -6,7 +6,7 @@ title: 首页
 heroImage:
 heroText: 花千树的博客
 heroFullScreen: false
-tagline: Step by step, keep moving !!!
+tagline: 有一种鸟是注定关不住的，因为它的每一片羽毛都沾满了自由的光辉。
 bgImage: /assets/bg/tree.jpg
 projects:
   - icon: link
@@ -21,7 +21,7 @@ footer: 你真的读到这里了？那你一定超爱这个博客！
   import Typed from 'typed.js';
 
   async function fetchHitokoto() {
-    const response = await fetch('https://v1.hitokoto.cn')
+    const response = await fetch('https://v1.hitokoto.cn?c=a&c=d&c=e&c=h&c=i&c=j&c=k')
     const { uuid, hitokoto: hitokotoText, from, from_who } = await response.json()
     if (typeof document!== 'undefined') {
     
